@@ -1,0 +1,479 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    font-weight: 300;
+    color: #222;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0)70% ,rgb(72, 0, 124));
+}
+
+div{
+    /* border: 1px solid orange; */
+    box-sizing: border-box;
+}
+
+.btn-hr{
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eee;
+    width: 35%;
+    height: 0.05px;
+    position: absolute;
+}
+
+input[name=tabmenu]{
+    display:none;
+}
+
+.tabs{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.items{
+    /* border: 1px solid red; */
+    height: 300vh;
+    width: 400%;
+    transition: 0.5s;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.items > div{
+/* border: 1px solid blue; */
+height: 100vh;
+float: left;
+width: 25%;
+/* box-sizing: border-box; */
+}
+
+.items .service-introduction{
+    height: 300vh;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid blue; */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 15%;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 이미지 비율을 유지하면서 부모에 맞추기 */
+}
+
+section{
+    /* border: 1px solid rgb(242, 255, 0); */
+    width: 50%;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+}
+
+.STEW section{
+    margin-top: 10%;
+}
+
+.left{
+    height: 50%;
+    width: 50%;
+    position: relative;
+}
+
+.left p{
+    display: inline-block;
+    float: right;
+    padding-right: 15%;
+    color: #ffffff;
+}
+
+.app-ui{
+    right: 25%;
+    bottom :-60%;
+    width: 357px;
+    height: 809px;
+    transform: rotate(-30deg) skewX(20deg);
+    scale: 0.6;
+    position: absolute;
+    box-shadow: 0, 20px 0 rgb(0, 0, 0, 0.3);
+    transition: 0.2;
+    background-color: #1e1e1e;
+}
+
+.app-ui:hover{
+    box-shadow: -50Px 100px 60px rgb(0, 0, 0, 0.4);
+}
+
+.app-ui img{
+    position: absolute;
+    transition: 0.5s;
+}
+
+.app-ui img:nth-child(1){
+    transform: translate(20px, -20px);
+    opacity: 0.8;
+}
+.app-ui img:nth-child(2){
+    transform: translate(40px, -40px);
+    opacity: 0.8;
+}
+.app-ui img:nth-child(3){
+    transform: translate(60px, -60px);
+    opacity: 0.8;
+}
+.app-ui img:nth-child(4){
+    transform: translate(80px, -80px);
+}
+
+
+.app-ui:hover img:nth-child(1){
+    transform: translate(60px, -60px);
+}
+
+.app-ui:hover img:nth-child(2){
+    transform: translate(100px, -100px);
+}
+.app-ui:hover img:nth-child(3){
+    transform: translate(140px, -140px);
+}
+.app-ui:hover img:nth-child(4){
+    transform: translate(180px, -180px);
+}
+
+
+.items div h1{
+    font-size: 80px;
+    font-weight: normal;
+}
+
+
+
+.STEW .right{
+    color: #eeeeee;
+}
+
+.introduction{
+    /* height: 200px; */
+}
+
+.introduction p{
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.app-down{
+    padding-top: 30px;
+}
+
+
+
+
+.service-introduction > div{
+    width: 100%;
+    height: 300vh;
+}
+.service-introduction .container div{
+    height: 33.3333%;
+}
+
+.container div section{
+    height: 100%;
+    color: #eee;
+    text-align: center;
+    
+}
+
+.container div section h1{
+    font-size: 70px;
+    line-height: 90px;
+    text-align: left;
+    margin: 0;
+    margin-top: 10%;
+}
+
+.container div section p{
+    font-size: 30px;
+    line-height: 50px;
+    opacity: 0.6;
+    text-align: left;
+
+}
+
+.introduction_1{
+    background-image: linear-gradient(to bottom left, rgb(0, 0, 0)70% ,rgb(72, 0, 124));
+}
+
+
+.introduction_1 .left img{
+    margin-top: 180px;
+    width: 500px;
+}
+
+.introduction_1 .right,
+.introduction_2 .left,
+.introduction_3 .right
+{
+    padding: 60px;
+}
+
+.introduction_2{
+    background-image: linear-gradient(to top left, rgb(0, 0, 0)70% ,rgb(72, 0, 124));
+}
+
+.introduction_2 .left h1{
+    margin-left: 16%;
+}
+
+.introduction_2 .right img{
+    margin-top: 10%;
+    width: 320px;
+}
+
+.introduction_3{
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0)60% ,rgb(72, 0, 124));
+}
+
+.introduction_3 .left img{
+    margin-top: 50px;
+    width: 400px;
+}
+
+.ttb{
+    animation : ttb 1s linear both;
+}
+
+@keyframes ttb{
+    0%{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+
+.find-page{
+    text-align: center;
+}
+
+.find-page h2{
+    color: #eee;
+    font-size: 50px;
+    margin-top: 4%;
+}
+
+.ro{
+    width: 100%;
+    overflow: hidden;
+}
+
+.university{
+    float: left;
+    width: 300%;
+}
+
+.university img{
+    display: inline-block;
+    height: 150px;
+}
+
+.rotation{
+    animation : rrtl 15s linear infinite;
+}
+
+@keyframes rrtl{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-2200px);
+    }
+}
+
+.checked_school{
+    width: 100%;
+    margin-top: 5%;
+
+}
+
+input {
+  width: 45%;
+  font-size: 30px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+}
+
+button{
+    height: 50px;
+    width: 9%;
+    border-radius:15px ;
+    /* outline: none; */
+    background-color: #6E2ADD;
+    color: #eee;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.TEAM-page .left{
+    width: 22%;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.TEAM-page .left > h2{
+    color: #ffffff;
+    line-height: 60px;
+    font-size: 50px;
+}
+
+.TEAM-page .left > p{
+    margin: 0;
+    float: left;
+}
+
+.TEAM-page .right{
+    width: 78%
+}
+.TEAM-page .right div{
+    float: left;
+    margin: 0 10px;
+    width: 270px;
+    height: 550px;
+    /* border: 1px solid rgb(0, 255, 102); */
+    padding-top: 30px;
+    
+}
+
+/* .container{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top:0;
+    left: 0;
+
+} */
+
+
+
+.TEAM-page .right div p{
+    color: #ffffff;
+}
+
+.name{
+    font-size: 40px;
+    margin : 0;
+    margin-top: 30px;
+    font-weight: 400;
+}
+.part{
+    margin-top: 0;
+}
+
+footer{
+    display: inline-block;
+    text-align: center;
+    /* border:1px solid brown; */
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+
+footer img{
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    margin: 10px;
+    
+
+}
+
+footer p{
+    position: relative;
+    display: inline-block;
+    color:#eeeeee;
+    margin-top: 0;
+    transform: translate(0,-200%);
+    
+}
+
+
+
+
+.btn{
+    top:0;
+    left: 70%;
+    position: absolute;
+    bottom: 0;
+    /* width: 100%; */
+    height: 50px;
+    line-height: 60px;
+    /* border-bottom: 1px solid white; */
+    
+}
+.btn label{
+    /* position: relative;
+    left: 25%; */
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    height: 50px;
+    padding: 0 15px;
+    margin-top: 20px;
+    /* height: 2px;
+    width: 110px;
+    background-color: #ffffff; */
+}
+
+.btn label:hover{
+    color: rgb(163, 98, 223);
+    border-bottom: 2px solid rgb(129, 47, 206);
+}
+
+input[id=tab1]:checked ~ .tabs .items{
+    left: 0;
+}
+
+input[id=tab2]:checked ~ .tabs .items{
+    left: -100%;
+}
+
+input[id=tab3]:checked ~ .tabs .items{
+    left: -200%;
+}
+input[id=tab4]:checked ~ .tabs .items{
+    left: -300%;
+}
+
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3],
+input[id=tab4]:checked ~ .btn label[for=tab4]{
+    color: rgb(163, 98, 223);
+    /* border-bottom: 2px solid rgb(129, 47, 206); */
+}
+
+
